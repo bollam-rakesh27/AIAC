@@ -1,0 +1,33 @@
+import getpass
+
+def collect_user_data():
+    # Prompt user for password (input hidden)
+    password = getpass.getpass("Set a password to protect your data: ")
+
+    # Collect user details
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    email = input("Enter your email: ")
+
+    # Ask for password to show data
+    entered_password = getpass.getpass("Enter your password to view your data: ")
+    if entered_password != password:
+        print("Incorrect password. Access denied.")
+        return
+
+    # Mask the email (hide the part before '@')
+    email_parts = email.split('@')
+    if len(email_parts) == 2:
+        masked_email = '*' * len(email_parts[0]) + '@' + email_parts[1]
+    else:
+        masked_email = "Invalid email format"
+
+    # Show collected data with comments
+    print("\n# Collected User Data")
+    print(f"# Name: {name}")
+    print(f"# Age: {age}")
+    print(f"# Email: {masked_email}")
+
+# Run the function
+if __name__ == "__main__":
+    collect_user_data()
