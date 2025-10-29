@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Warangal",
+        "temp": 23.09,
+        "humidity": 97,
+        "weather": "Heavy intensity rain"
+    },
+    {
+        "city": "Adilabad",
+        "temp": 27.81,
+        "humidity": 75,
+        "weather": "Overcast clouds"
+    }
+]
