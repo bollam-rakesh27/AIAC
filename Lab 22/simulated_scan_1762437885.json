@@ -1,0 +1,48 @@
+{
+  "scan_time": "2025-11-06T19:34:45.402094",
+  "results": [
+    {
+      "target": "10.0.0.5",
+      "timestamp": "2025-11-06T19:34:45.400543",
+      "up": true,
+      "ports": [
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "service": "https",
+          "state": "open",
+          "banner": "nginx/1.20.1 (TLS 1.2)",
+          "rtt_ms": 13.37
+        },
+        {
+          "port": 3306,
+          "protocol": "tcp",
+          "service": "mysql",
+          "state": "open",
+          "banner": "",
+          "rtt_ms": 15.01
+        },
+        {
+          "port": 53,
+          "protocol": "tcp",
+          "service": "dns",
+          "state": "open",
+          "banner": "BIND 9.16",
+          "rtt_ms": 13.44
+        },
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "service": "ssh",
+          "state": "open",
+          "banner": "OpenSSH 8.9p1",
+          "rtt_ms": 1.13
+        }
+      ],
+      "summary": {
+        "open_ports": 4,
+        "total_ports_checked": 4
+      }
+    }
+  ]
+}

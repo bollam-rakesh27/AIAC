@@ -1,0 +1,40 @@
+{
+  "scan_time": "2025-11-06T19:34:18.067656",
+  "results": [
+    {
+      "target": "192.168.1.21",
+      "timestamp": "2025-11-06T19:34:18.064683",
+      "up": true,
+      "ports": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "service": "http",
+          "state": "open",
+          "banner": "Apache/2.4.54 (Ubuntu)",
+          "rtt_ms": 9.96
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "service": "https",
+          "state": "open",
+          "banner": "nginx/1.20.1 (TLS 1.2)",
+          "rtt_ms": 10.88
+        },
+        {
+          "port": 3306,
+          "protocol": "tcp",
+          "service": "mysql",
+          "state": "closed",
+          "banner": "",
+          "rtt_ms": null
+        }
+      ],
+      "summary": {
+        "open_ports": 2,
+        "total_ports_checked": 3
+      }
+    }
+  ]
+}
