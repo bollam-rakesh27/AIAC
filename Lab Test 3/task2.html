@@ -1,0 +1,92 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rakesh — Portfolio</title>
+<style>
+    :root{--bg:#0f1724;--card:#111827;--muted:#9ca3af;--accent:#06b6d4;--text:#e6eef6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:linear-gradient(180deg,#071029 0%, #0a1220 100%);color:var(--text);line-height:1.5}
+    .container{max-width:900px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:12px;
+        background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;
+        justify-content:center;font-weight:700;font-size:28px;color:#041122}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px;
+        box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:12px;margin-top:12px}
+    .proj{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+        padding:12px;border-radius:8px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:8px;
+        background:var(--accent);color:#04202a;text-decoration:none;font-weight:600}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    @media(min-width:700px){ .grid{grid-template-columns:2fr 1fr} }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">R</div>
+            <div>
+                <h1>Rakesh</h1>
+                <p class="lead">Personal Portfolio • Hall Ticket: 2403A51021</p>
+                <div class="meta">
+                    <div>Phone: 123456789</div>
+                    <div>Email: <a href="mailto:rakesh@gmail.com" style="color:var(--accent);text-decoration:none">
+                        rakesh@gmail.com</a></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <section class="card">
+                <h2>About</h2>
+                <p class="lead" style="color:var(--text)">Hello — I'm Rakesh. This is a concise portfolio page. Add your bio, skills, projects, 
+                    and education here. Use this template to showcase your work and contact details.</p>
+
+                <h3 style="margin-top:14px">Skills</h3>
+                <div class="meta" style="margin-top:8px">
+                    <div>Python</div><div>Web Dev</div><div>Data Analysis</div><div>Git</div>
+                </div>
+
+                <h3 style="margin-top:14px">Projects</h3>
+                <div class="projects">
+                    <div class="proj">
+                        <strong>Project 1</strong>
+                        <div style="color:var(--muted);font-size:13px;margin-top:6px">Short description of a project or assignment.</div>
+                    </div>
+                    <div class="proj">
+                        <strong>Project 2</strong>
+                        <div style="color:var(--muted);font-size:13px;margin-top:6px">Short description of another project.</div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="card">
+                <h3>Contact</h3>
+                <p style="color:var(--muted)">Reach out for collaborations, internships, or questions.</p>
+                <p style="margin-top:12px"><strong>Phone:</strong> 123456789<br><strong>Email:</strong>
+                     <a href="mailto:rakesh@gmail.com" style="color:var(--accent);text-decoration:none">rakesh@gmail.com</a></p>
+                <div style="margin-top:12px">
+                    <a class="btn" href="mailto:rakesh@gmail.com">Email Rakesh</a>
+                </div>
+
+                <h3 style="margin-top:18px">Education</h3>
+                <p style="color:var(--muted);font-size:14px">Hall Ticket: 2403A51021</p>
+            </aside>
+        </div>
+
+        <footer class="card" style="margin-top:20px;background:transparent">
+            <div>Made with simple HTML/CSS • Contact: 123456789 • rakesh@gmail.com</div>
+        </footer>
+    </div>
+</body>
+</html>
+
